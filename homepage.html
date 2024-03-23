@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transport Analyser</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    *{color: orangered;
+    }
+      .nav-links{background-color: rgb(251, 76, 1);
+      }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="homepage.html" style="color: white;">Home</a></li>
+        <li><a href="About.html" style="color: white;">About</a></li>
+        <li><a href="Contacts.html" style="color: white;">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main style="background-color:black;padding-left: 50px;">
+    <h1 style="padding-bottom: 50px;">Upload and Analyze Transport Images</h1>
+    <fieldset style="border-color: chartreuse;border-radius: 20px;">
+    <form id="image-upload" class="image-upload-form">
+      <label for="image-upload">Select Image:</label>
+      <input type="file" id="image-upload" name="image" accept="image/*";">
+      <span style="padding-left: 950px; border-radius: 60px;"><button type="submit">Upload</button></span>
+    </form>
+    </fieldset>
+
+    <section id="results" class="results-section">
+      <h2>Original Image</h2>
+      <img id="original-image" alt="Uploaded image">
+      <h2 style="padding-bottom: 170px;">Processed Image with Detections</h2>
+      <img id="processed-image" alt="Processed image with detected objects">
+      <div id="analysis-message" class="analysis-message"></div>
+    </section>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
